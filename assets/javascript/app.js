@@ -7,7 +7,7 @@ $("#button-box").on("click", "button", function(){
     var searchText = $(this).text();
     if(searchText !== currentSearch){
         $("#gif-results").empty();
-        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + searchText + "&limit=10&api_key=VEZHrKqVdCyZsqm04KR03fPmWINC3fFU";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + searchText + "&limit=10&rating=g&api_key=VEZHrKqVdCyZsqm04KR03fPmWINC3fFU";
         $.ajax({
             url: queryURL,
             method: "GET"
@@ -28,7 +28,8 @@ $("#button-box").on("click", "button", function(){
 });
 
 $("#search-button").on("click", function(){
-    // alert($("#search-text").val());
+    
+    event.preventDefault();
     var searchText = $("#search-text").val();
     if(searchText.length > 0){
         var newButton = $("<button>");
