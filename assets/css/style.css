@@ -9,3 +9,9 @@ img{
     border: solid 1px black;
     background-color: green;
 }
+
+.gif-box{
+    float: left;
+    text-align: center;
+    /* max-width: 200px; */
+}
