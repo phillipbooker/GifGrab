@@ -1,17 +1,38 @@
+body{
+    background-image: url("../images/cloudy-day.png");
+    font-family: 'Quicksand', sans-serif;
+}
+
 img{
     max-height: 100px;
 }
 
+#button-box{
+    margin-bottom: 15px;
+}
+
+.rating{
+    font-weight: bold;
+    font-size: 0.85em;
+}
+
 #gif-results{
     margin: auto;
-    max-width: 750px;
-    height: 500px;
-    border: solid 1px black;
-    background-color: green;
 }
 
 .gif-box{
     float: left;
     text-align: center;
-    /* max-width: 200px; */
+    margin: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#search-button{
+    padding: 3px;
+    margin-top: 10px;
+}
+
+.search-button{
+    margin: 5px;
 }
